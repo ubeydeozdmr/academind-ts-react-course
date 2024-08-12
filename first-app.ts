@@ -1,9 +1,9 @@
 let userName = 'Ubeyde';
 
-// userName = 34;
+// userName = 22;
 userName = 'Ubeyde';
 
-let userAge: number = 34;
+let userAge: number = 22;
 
 let isValid = true;
 
