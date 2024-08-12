@@ -120,9 +120,17 @@ admin = {
   userName: 'Ubeyde',
 };
 
-let role: 'admin' | 'user' | 'editor'; // 'admin', 'user', 'editor'
+type Role = 'admin' | 'user' | 'editor';
+
+let role: Role; // 'admin', 'user', 'editor'
 
 role = 'admin';
 role = 'user';
 role = 'editor';
 // role = 'abc';
+
+function performAction(action: string | number, role: Role) {
+  if (role === 'admin' && typeof action === 'string') {
+    // ...
+  }
+}
