@@ -32,9 +32,11 @@ export default function App() {
       <button onClick={handleAddGoal}>Add Goal</button>
       <ul>
         {goals.map((goal) => (
-          <CourseGoal key={goal.id} title={goal.title}>
-            <p>{goal.description}</p>
-          </CourseGoal>
+          <li key={goal.id}>
+            <CourseGoal title={goal.title}>
+              <p>{goal.description}</p>
+            </CourseGoal>
+          </li>
         ))}
       </ul>
     </main>
