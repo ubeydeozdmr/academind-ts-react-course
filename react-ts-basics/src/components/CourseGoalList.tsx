@@ -1,5 +1,5 @@
-import CourseGoal from './CourseGoal';
-import { type CourseGoal as CGoal } from '../App';
+import CourseGoal from './CourseGoal.tsx';
+import { type CourseGoal as CGoal } from '../App.tsx';
 
 type CourseGoalListProps = {
   goals: CGoal[];
