@@ -54,7 +54,7 @@ type Action = StartTimersAction | StopTimersAction | AddTimerAction;
 
 function timersReducer(state: TimersState, action: Action): TimersState {
   if (action.type === 'START_TIMERS') {
-    // state.isRunning = true; // This is not allowed
+    // state.isRunning = true;
     return {
       ...state,
       isRunning: true,
@@ -86,6 +86,7 @@ export default function TimersContextProvider({
   children,
 }: TimersContextProviderProps) {
   const [timersState, dispatch] = useReducer(timersReducer, initialState);
+
   const ctx: TimersContextValue = {
     timers: timersState.timers,
     isRunning: timersState.isRunning,
